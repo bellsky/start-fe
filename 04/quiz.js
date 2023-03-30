@@ -265,6 +265,8 @@ console.log(user);
 
 
 
+
+
 //16.문자열을 객체형으로
 //JSON.parse 함수 사용?
 const text16 = "{a:1, b:2}";
@@ -276,6 +278,9 @@ const toObj = text16;
 console.log(toObj);
 
 // 출력: {a:1 , b:2}
+
+
+
 
 
 //17.json을 문자열로
@@ -338,15 +343,46 @@ const list19 = [
   console.log(title19);
 
 
+
+
   //20.다음일 구하기
   const dday = "2022-02-02";
 
   // quiz
-    
- const yymmdd = dday.split('-');
- const yy = yymmdd[0];
- const mm = yymmdd[1];
- const dd = yymmdd[2]; 
+
+  const today = new Date(dday);
+  console.log(today);
+
+
+  const yy = today.getFullYear();
+  const mm = today.getMonth();
+  const dd = today.getDate();
+
+  const tommorow = new Date(yy, mm, dd + 1).toLocaleDateString();
+
+
+  const newday = tommorow.split('. ');
+  const yy2 = newday[0];
+  const mm2 = newday[1];
+  const dd2 = newday[2];
+
+  
+if(dd2<10&&dd2>0){
+    dd3 = '0'+dd2;
+}else {
+    dd3 = dd2;
+}
+
+if(mm2<10&&mm2>0){
+    mm3 = '0'+mm2;
+}else {
+    mm3 = mm2;
+}
+
+var nextday = yy2 + '-' + mm3 + '-' + dd3;
+nextday = nextday.slice(0, -1);
+
   // 출력: '2022-02-03'
 
-  console.log(dd);
+
+console.log(nextday);
