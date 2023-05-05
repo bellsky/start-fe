@@ -28,4 +28,3 @@ document.querySelector('#debug').innerHTML = text;
 
 //.remove()
 // .removeChild()
-

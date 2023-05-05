@@ -4,13 +4,6 @@ console.log(
 
 //변수 선언
 
-/*
-ㅁㄴㅇㄹ
-ㅁㄴㅇㄹ
-ㅁㄴㅇㄹ
-ㅁㄴㅇㄹ
-*/
-
 var name1 = "abc";
 console.log(name1);
 
