@@ -18,3 +18,5 @@ export function openModal() {
   // head 요소에 스타일 요소 추가
   var headElement = document.querySelector('head');
   headElement.appendChild(styleElement);
+
+  //커밋 실수 되돌리기
